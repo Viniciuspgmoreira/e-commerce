@@ -9,7 +9,7 @@ const CollectionItem = ({ id, name, price, imageUrl }) => (
     ></div>
     <div className="collection-footer">
       <span className="name">{name}</span>
-      <span className="name">{price}</span>
+      <span className="name">R$: {price.toFixed(2)}</span>
     </div>
   </div>
 )
