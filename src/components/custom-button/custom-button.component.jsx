@@ -3,7 +3,7 @@ import './custom-button.styles.scss'
 
 const CustomButton = ({ google, children, ...otherProps }) => (
   <button
-    className={`${google === true ? 'custom-button-google' : 'custom-button'}`}
+    className={`${google ? 'custom-button-google' : ''} custom-button`}
     {...otherProps}
   >
     {children}

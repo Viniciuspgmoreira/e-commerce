@@ -48,12 +48,14 @@ class SignIn extends React.Component {
             label="password"
           ></FromInput>
 
-          <CustomButton google={false} type="submit">
-            Sign in
-          </CustomButton>
-          <CustomButton google={true} onClick={signInWithGoogle}>
-            <i className="fab fa-google"></i>
-          </CustomButton>
+          <div className="buttons">
+            <CustomButton google={false} type="submit">
+              Sign in
+            </CustomButton>
+            <CustomButton google={true} onClick={signInWithGoogle}>
+              <i className="fab fa-google"></i>
+            </CustomButton>
+          </div>
         </form>
       </div>
     )
